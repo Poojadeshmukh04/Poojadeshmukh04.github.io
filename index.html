@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pooja Deshmukh | Data Science & Machine Learning</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(11,17,32,.95);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f2937;
+      z-index: 10;
+    }
+
+    nav strong {
+      color: white;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 10%;
+      background:
+        radial-gradient(circle at 80% 30%, #123456 0%, transparent 35%),
+        #0b1120;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .label {
+      color: #38bdf8;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    h1 {
+      color: white;
+      font-size: clamp(46px, 8vw, 82px);
+      line-height: 1.05;
+      margin: 15px 0;
+    }
+
+    .hero h2 {
+      color: #94a3b8;
+      font-size: clamp(21px, 3vw, 30px);
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #38bdf8;
+      color: #07111f;
+      padding: 12px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 10px 5px 0;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+    }
+
+    section {
+      padding: 85px 10%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: white;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      color: #94a3b8;
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 26px;
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: white;
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #7dd3fc;
+      background: #0c2538;
+      padding: 4px 9px;
+      border-radius: 15px;
+      font-size: 12px;
+      margin: 12px 5px 0 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .skills span {
+      display: inline-block;
+      padding: 9px 14px;
+      margin: 6px;
+      background: #111827;
+      border: 1px solid #253249;
+      border-radius: 20px;
+    }
+
+    .research-box {
+      border-left: 3px solid #38bdf8;
+      padding: 5px 0 5px 25px;
+      margin-top: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      border-top: 1px solid #1f2937;
+      color: #64748b;
+    }
+
+    @media(max-width: 750px) {
+      nav .links {
+        display: none;
+      }
+
+      section, .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <strong>PD.</strong>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<div class="hero">
+  <div class="hero-content">
+
+    <div class="label">Data Science • Machine Learning • Responsible AI</div>
+
+    <h1>Pooja Deshmukh</h1>
+
+    <h2>Data Scientist | Machine Learning | Privacy-Preserving AI</h2>
+
+    <p>
+      MSc Data Science graduate focused on machine learning,
+      privacy-preserving data systems and responsible AI.
+      I develop data-driven solutions with particular interests
+      in healthcare analytics, data privacy and trustworthy
+      machine learning.
+    </p>
+
+    <a class="button" href="#projects">Explore My Work</a>
+
+    <a class="button secondary"
+       href="https://github.com/Poojadeshmukh04"
+       target="_blank">
+       GitHub
+    </a>
+
+  </div>
+</div>
+
+
+<section id="about">
+
+  <div class="label">About</div>
+  <h2>About Me</h2>
+
+  <p class="section-intro">
+    I hold an MSc in Data Science from Coventry University.
+    My technical work spans machine learning, statistical analysis,
+    data engineering and privacy-preserving technologies.
+    I am particularly interested in developing responsible approaches
+    for analysing sensitive data and applying machine learning to
+    real-world problems.
+  </p>
+
+</section>
+
+
+<section id="projects">
+
+  <div class="label">Selected Work</div>
+  <h2>Featured Projects</h2>
+
+  <p class="section-intro">
+    Selected technical work exploring privacy, healthcare data,
+    machine learning and secure data systems.
+  </p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="label">Featured</div>
+
+      <h3>Privacy-Preserving Healthcare Framework</h3>
+
+      <p>
+        A technical framework exploring privacy-preserving computation
+        for healthcare data using Homomorphic Encryption, Differential
+        Privacy and Secure Multi-Party Computation.
+      </p>
+
+      <span class="tag">Python</span>
+      <span class="tag">Differential Privacy</span>
+      <span class="tag">Cryptography</span>
+      <span class="tag">Healthcare</span>
+
+      <br>
+
+      <a href="https://github.com/Poojadeshmukh04/Privacy-Preserving-Healthcare-Framework"
+         target="_blank">
+         View Project →
+      </a>
+    </div>
+
+
+    <div class="card">
+
+      <h3>Blockchain Medical Privacy Framework</h3>
+
+      <p>
+        Exploration of blockchain-based approaches to healthcare
+        data governance, access control and auditable data sharing.
+      </p>
+
+      <span class="tag">Blockchain</span>
+      <span class="tag">Data Privacy</span>
+      <span class="tag">Healthcare</span>
+
+      <br>
+
+      <a href="https://github.com/Poojadeshmukh04"
+         target="_blank">
+         View on GitHub →
+      </a>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Liver Disease Detection Using Machine Learning</h3>
+
+      <p>
+        Comparative machine-learning analysis of clinical data,
+        evaluating multiple classification algorithms for liver
+        disease prediction using structured performance metrics.
+      </p>
+
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Python</span>
+      <span class="tag">Healthcare Analytics</span>
+
+      <br>
+
+      <a href="https://github.com/Poojadeshmukh04/First-Project_Liver-Disease-Detection-Using-Data-Mining-and-Machine-Learning-Techniques_"
+         target="_blank">
+         View Project →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="research">
+
+  <div class="label">Research</div>
+  <h2>Research Interests</h2>
+
+  <p class="section-intro">
+    My developing research interests sit at the intersection of
+    artificial intelligence, privacy and responsible data use.
+  </p>
+
+  <div class="research-box">
+    <p>
+      Privacy-Preserving Machine Learning • Responsible AI •
+      Healthcare AI • Differential Privacy • Homomorphic Encryption •
+      Secure Data Analytics • Data Governance
+    </p>
+  </div>
+
+  <div class="research-box">
+    <h3>Current Direction</h3>
+
+    <p>
+      Developing deeper experimental work around privacy-preserving
+      approaches for analysing sensitive healthcare data, with the
+      aim of producing reproducible research and peer-reviewed outputs.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="skills">
+
+  <div class="label">Technical Toolkit</div>
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>R</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Scikit-learn</span>
+    <span>Machine Learning</span>
+    <span>Statistical Analysis</span>
+    <span>Power BI</span>
+    <span>Tableau</span>
+    <span>Data Cleaning</span>
+    <span>Data Visualisation</span>
+    <span>Git</span>
+    <span>Excel</span>
+    <span>Differential Privacy</span>
+    <span>Homomorphic Encryption</span>
+  </div>
+
+</section>
+
+
+<section id="education">
+
+  <div class="label">Background</div>
+  <h2>Education</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>MSc Data Science</h3>
+      <p>Coventry University, United Kingdom</p>
+      <p>2024</p>
+    </div>
+
+    <div class="card">
+      <h3>B.Tech Electronics & Communication Engineering</h3>
+      <p>Dr APJ Abdul Kalam Technical University, India</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="contact">
+
+  <div class="label">Let's Connect</div>
+  <h2>Contact</h2>
+
+  <p class="section-intro">
+    Interested in data science, machine learning, research collaboration
+    or applied AI? Feel free to connect with me.
+  </p>
+
+  <a class="button"
+     href="mailto:worshipdeshmukh04@gmail.com">
+     Email Me
+  </a>
+
+  <a class="button secondary"
+     href="https://github.com/Poojadeshmukh04"
+     target="_blank">
+     GitHub
+  </a>
+
+</section>
+
+
+<footer>
+  © 2026 Pooja Deshmukh • Data Science & Machine Learning Portfolio
+</footer>
+
+</body>
+</html>
